@@ -1,2 +1,1 @@
-console.log(stringNumber);
-console.log(typeof stringNumber);
+console.log(myDate.toString())
