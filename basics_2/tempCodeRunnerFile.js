@@ -1,1 +1,3 @@
-console.log(all_new_heros);
+erUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
