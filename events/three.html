@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharv</title>
+</head>
+<body style="background-color: black; color:white">
+    <h1>Atharv's Workspace for javascript</h1>
+    <button id="start">START</button>
+
+    <button id="stop">STOP</button>
+</body>
+<script>
+    let intervalId=null
+    const sayDate=(str)=>{
+        console.log(str,Date.now())
+    }
+    document.getElementById("start").addEventListener("click",function(){
+        if(!intervalId){
+            intervalId=setInterval(sayDate,1000,"hi")
+        }
+        document.querySelector('h1').innerHTML="Printing STARTED"
+    })
+    
+    document.getElementById("stop").addEventListener("click",function(){
+        
+        clearInterval(intervalId)
+        intervalId=null
+        document.querySelector('h1').innerHTML=" Printing STOPPED"
+    })
+
+
+
+
+
+    
+    // const intervalId=setInterval(sayDate,1000,"hi")
+</script>
+</html>
