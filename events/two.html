@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color:white">
+    <h1>Atharv's Workspace</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    const atharv=function(){
+        console.log("Atharv")
+    }
+    const changeText=()=>{
+        
+    document.querySelector('h1').innerHTML="Best HAcker"
+    }
+    const changMe=setTimeout(changeText,2000)
+    document.getElementById('stop').addEventListener('click',function(){
+        clearTimeout(changMe)
+        document.querySelector('h1').innerHTML="STOPPED"
+    })
+</script>
+</html>
